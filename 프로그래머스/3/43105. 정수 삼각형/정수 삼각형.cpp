@@ -4,6 +4,11 @@
 
 using namespace std;
 
+/*
+* 아래에서 위로 가는 것이 더 쉬웠을 것!
+* DP 문제
+*/
+
 int solution(vector<vector<int>> triangle) {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
