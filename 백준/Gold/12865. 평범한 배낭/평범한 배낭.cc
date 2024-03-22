@@ -4,6 +4,11 @@
 
 using namespace std;
 
+/**
+* DP 문제
+* 연습 더 하기!!
+*/
+
 int main() {
     int N, K;
     vector<pair<int, int>> input;
