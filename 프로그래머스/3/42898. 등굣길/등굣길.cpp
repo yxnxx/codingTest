@@ -6,6 +6,12 @@ using namespace std;
 
 #define DIV 1000000007
 
+/*
+* 효율성에서 계속 에러가 나서 다른 사람들의 코드를 참고해
+* if문을 줄이는 방향으로 수정해 보았으나, 실패
+* 좀 더 검색을 해 보니, 자료형의 크기가 문제였음!
+* 나머지 계산을 아예 for문에 포함 시켰다.
+*/
 int solution(int m, int n, vector<vector<int>> puddles) {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
