@@ -1,5 +1,10 @@
 import java.util.*;
 
+/**
+* 처음에 string -> Integer.parseInt
+* 테스트케이스는 다 맞는데 제출 시 런타임 에러!
+* 문자열 길이가 10,000까지였으므로 주의했어야 함.
+*/
 class Solution {
     public int solution(String t, String p) {
         long tval = 0;
