@@ -1,3 +1,8 @@
+/**
+* 다른 사람들의 코드를 보니 보통 동서남북으로 이동하는 것을 배열로 저장해서 푼다.
+* x축 이동 - {0,0,-1,1} y축 이동 - {1,-1,0,0} 저장해 두고, for문 사용
+*/
+
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -5,10 +10,9 @@ using namespace std;
 
 vector<vector<int>> field;
 queue<pair<int, int>> loc;
-// vector<pair<int, int>> loc;
-vector<bool> visited;
-void BFS(int, int, int, int);
+void DFS(int, int, int, int);
 int cnt;
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
@@ -18,11 +22,9 @@ int main() {
     cin >> T;
 
     int M, N, K;
-   
     for(int i = 0; i < T; i++) {
         cnt = 0;
         cin >> M >> N >> K;
-        visited.resize(K);
         field.resize(N);
 
         for(int j = 0; j < N; j++) {
@@ -41,7 +43,7 @@ int main() {
             X = loc.front().first;
             Y = loc.front().second;
             if(field[Y][X] == 1) {
-                BFS(X, Y, M, N);
+                DFS(X, Y, M, N);
                 cnt++;
             }
             loc.pop();
@@ -50,29 +52,29 @@ int main() {
     }
 }
 
-void BFS(int X, int Y, int M, int N) {
+void DFS(int X, int Y, int M, int N) {
     field[Y][X] = 0;
     if(X + 1 < M) {
         if(field[Y][X + 1] == 1) {
-            BFS(X + 1, Y, M, N);
+            DFS(X + 1, Y, M, N);
         }
     }
 
     if(X > 0) {
         if(field[Y][X - 1] == 1) {
-            BFS(X - 1, Y, M, N);
+            DFS(X - 1, Y, M, N);
         }
     }
 
     if(Y > 0) {
         if(field[Y - 1][X] == 1) {
-            BFS(X, Y - 1, M, N);
+            DFS(X, Y - 1, M, N);
         }
     }
 
     if(Y + 1 < N) {
         if(field[Y + 1][X] == 1) {
-            BFS(X, Y + 1, M, N);
+            DFS(X, Y + 1, M, N);
         }
     }
 }
