@@ -3,6 +3,14 @@
  * IOException 추가 or try-catch 필요
  */
 
+/*
+* 다른 사람들은 result를 따로 설정해서 y == x 시점에 result=cnt로 fix
+* 나는 길이 없어 다시 돌아오는 시점에 -1 계산을 하게 구현
+* for each문, ArrayList 사용법 등 익히기
+* DFS로 푼 것! BFS 풀이 방식도 존재
+* BFS 풀이법도 꼭 익혀 두자
+*/
+
 import java.io.*;
 import java.util.*;
 public class Main {
