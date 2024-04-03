@@ -38,22 +38,21 @@ public class Main {
         }
 
         cnt = 0;
-        BFS(x, y);
+        DFS(x, y);
         if(flag) System.out.println(cnt);
         else System.out.println(-1);
     }
 
-    public static void BFS(int x, int y) {
+    public static void DFS(int x, int y) {
         visited.set(x, true);
         if(y == x) {
             flag = true;
             return;
         }
         cnt++;
-        for(int i = 0; i < rel[x].size(); i++) {
-            int next = rel[x].get(i);
-            if(!visited.get(next) && !flag) {
-                BFS(next, y);
+        for (int next : rel[x]) {
+            if (!visited.get(next) && !flag) {
+                DFS(next, y);
             }
         }
         if(!flag) cnt--;
