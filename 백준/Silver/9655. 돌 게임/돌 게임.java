@@ -1,3 +1,8 @@
+/*
+* DP 문제라고 하여 풀었으나, 오히려 그렇게 풀면 복잡함!
+* 그래도 DP 풀이법 한 번 보고 익혀 두자.
+*/
+
 import java.io.*;
 
 public class Main {
