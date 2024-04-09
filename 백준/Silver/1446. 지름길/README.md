@@ -2,6 +2,8 @@
 
 [문제 링크](https://www.acmicpc.net/problem/1446) 
 
+[관련 나의 블로그 글](https://velog.io/@yxnxx/%EB%B0%B1%EC%A4%80-1446-DP%EC%99%80-%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC)
+
 ### 성능 요약
 
 메모리: 14376 KB, 시간: 132 ms
