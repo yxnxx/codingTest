@@ -34,6 +34,8 @@ public class Main {
             int start = Integer.parseInt(st.nextToken());
             int end = Integer.parseInt(st.nextToken());
             int dist = Integer.parseInt(st.nextToken());
+
+            // 지름길이 아닌 경우는 꼭 제외하기
             if(start > D || end > D || end - start <= dist) continue;
             shortCuts.add(new ShortCut(start, end, dist));
         }
@@ -47,6 +49,7 @@ public class Main {
                 }
             }
 
+            // 모든 노드에 대해서 업데이트 여부 확인해야 함! 이게 없으면 지름길이 있는 지점만 업데이트 됨
             if(distance.get(i + 1) > distance.get(i) + 1) {
                 distance.set(i + 1, distance.get(i) + 1);
             }
