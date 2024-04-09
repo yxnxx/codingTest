@@ -1,3 +1,8 @@
+/*
+* 값을 비교해서 최소 값으로 업데이트 할 때
+* Math.min을 사용하면 더 간단하게 할 수 있음!
+*/
+
 import java.io.*;
 import java.util.*;
 
