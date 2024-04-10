@@ -7,18 +7,11 @@ class Solution {
         for(int i = 0; i < s.length(); i++) {
             if(s.charAt(i) == ' ') answer += " ";
             else if(Character.isUpperCase(s.charAt(i))) {
-                if(s.charAt(i) + n > 'A' + 25) {
-                    answer += (char)('A' + (s.charAt(i) + n - 'A') % 25 - 1);
-                }
-                else answer += (char)(s.charAt(i) + n);
+                answer += (char)('A' + (s.charAt(i) + n - 'A') % 26);
             }
             else {
-                if(s.charAt(i) + n > 'a' + 25) {
-                    answer += (char)('a' + (s.charAt(i) + n - 'a') % 25 - 1);
-                }
-                else answer += (char)(s.charAt(i) + n);
+                answer += (char)('a' + (s.charAt(i) + n - 'a') % 26);
             }
-            
         }
         return answer;
     }
