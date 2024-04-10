@@ -4,8 +4,6 @@ class Solution {
     public String solution(String s, int n) {
         String answer = "";
         
-        
-        System.out.println((int)('Z'));
         for(int i = 0; i < s.length(); i++) {
             if(s.charAt(i) == ' ') answer += " ";
             else if(Character.isUpperCase(s.charAt(i))) {
