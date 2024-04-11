@@ -1,3 +1,8 @@
+/*
+* 자바의 자료구조에 조금 약한 것 같아서 쉬운 문제들 위주로 풀어 보는 중
+* stream 사용법도 익혀야 함!
+*/
+
 import java.util.*;
 
 public class Solution {
