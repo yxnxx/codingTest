@@ -1,3 +1,8 @@
+/*
+* 시간 초과 주의!
+* main 함수 앞에 세 줄, endl 대신 개행문자('\n') 사용.
+*/
+
 #include <iostream>
 
 using namespace std;
