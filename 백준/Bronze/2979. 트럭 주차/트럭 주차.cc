@@ -1,3 +1,10 @@
+/*
+* 굳이 pq 안 쓰고 input 받을 때 머무는 시간 동안의 차 개수 +1 해 주도록 구현할 수 있음.
+* 또한 if else문으로 복잡하게 개수별 요금을 계산하지 않고, 배열을 사용할 수 있음.
+* {0, A, B, C}의 값으로 초기화된 배열 arr가 있다면 answer += arr[truck_num[i]]
+* for문 안에서 한 줄로 간단하게 계산 가능!
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
