@@ -2,6 +2,9 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/157342) 
 
+### 문제 풀 때 주의할 점
+- DATEDIFF(종료일, 시작일): 시작일과 종료일 사이의 일수 & + 1을 해야 시작일도 포함!
+
 ### 성능 요약
 
 메모리: 0.0 MB, 시간: 0.00 ms
